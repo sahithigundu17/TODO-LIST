@@ -24,6 +24,7 @@ let totalTasks = 0;
 
 const finishBtn = document.getElementById("finish-btn");
 finishBtn.addEventListener("click", () => {
+    console.log("Saving progress:", progressBarValue.value); // Debugging
     localStorage.setItem("finalProgress", progressBarValue.value);
     window.electronAPI.loadPage("finishDay.html");
 })

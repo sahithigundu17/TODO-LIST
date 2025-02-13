@@ -9,11 +9,11 @@
 </head>
 <body>
     <div class="finalDiv">
-        <h1></h1>
+        <h1 id="final-title"></h1>
 
         <div class="center-image">
-            <img src="./assets/FinishGood.png" alt="Center image">
-            <img src="./assets/FinishMid.png" alt="Center image">
+            <img src="./assets/FinishGood.png" alt="Center image" id="successTasks" hidden>
+            <img src="./assets/FinishMid.png" alt="Center image" id="unsuccessTasks" hidden>
         </div>
 
         <span id="conclusion"></span>
@@ -21,9 +21,9 @@
         <button id="restart-btn">BACK HOME</button>
     </div>
     
-    <script>
+    <script src="finishDay.js">
         const restartBtn = document.getElementById("restart-btn");
-        startBtn.addEventListener("click", () => {window.electronAPI.loadPage("index.html");})
+        restartBtn.addEventListener("click", () => {window.electronAPI.loadPage("index.html");})
     </script>
 </body>
 </html>
