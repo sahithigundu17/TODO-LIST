@@ -1,0 +1,15 @@
+{
+  "name": "greenproductive",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Betelgeuse",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^34.1.1"
+  }
+}
