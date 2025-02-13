@@ -6,20 +6,16 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
-    <script src="dashboard.js"></script>
-    <title>Green Productive</title>
+    
+    <title>Green Productivity</title>
 </head>
 <body>
     <div class="dashDiv">
         <div class="top-section">
             <div class="datetime">
-                <p>
-                    <span id="day"></span>
-                    <br>
-                    <span id="number"></span>
-                    <br>
-                    <span id="month"></span>
-                </p>
+                <span id="day"></span>
+                <span id="number"></span>
+                <span id="month"></span>
             </div>
 
             <div class="right-section">
@@ -29,27 +25,51 @@
                 </div>
 
                 <div class="add-task">
-                    <input id="writ-task" type="text">
+                    <input id="write-task" type="text" size="28" placeholder="Write your task here..." >
                     <button id="add-btn">+</button>
                 </div>
             </div>
         </div>
 
         <div class="bottom-section">
-            <label for="task1"><i class='bx bxs-leaf'></i></label>
-            <label for="task2"><i class='bx bxs-leaf'></i></label>
-            <label for="task3"><i class='bx bxs-leaf'></i></label>
-            <label for="task4"><i class='bx bxs-leaf'></i></label>
-            <label for="task5"><i class='bx bxs-leaf'></i></label>
-            <label for="task5"><i class='bx bxs-leaf'></i></label>
+            <p id="task1">
+                <i class='bx bxs-leaf'></i>
+                <span id="text-task-1"></span>
+            </p>
+
+            <p id="task2">
+                <i class='bx bxs-leaf'></i>
+                <span id="text-task-2"></span>
+            </p>
+
+            <p id="task3">
+                <i class='bx bxs-leaf'></i>
+                <span id="text-task-3"></span>
+            </p>
+
+            <p id="task4">
+                <i class='bx bxs-leaf'></i>
+                <span id="text-task-4"></span>
+            </p>
+
+            <p id="task5">
+                <i class='bx bxs-leaf'></i>
+                <span id="text-task-5"></span>
+            </p>
+
+            <p id="task6">
+                <i class='bx bxs-leaf'></i>
+                <span id="text-task-6"></span>
+            </p>
+
+            <p id="task7">
+                <i class='bx bxs-leaf'></i>
+                <span id="text-task-7"></span>
+            </p>
         </div>
         <button id="finish-btn">FINISH DAY</button>
     </div>
     
-    <script>
-        const startBtn = document.querySelector(".start-btn");
-
-        startBtn.addEventListener("click", () => {window.electronAPI.loadPage("dashboard.html");})
-    </script>
+    <script src="dashboard.js"></script>
 </body>
 </html>
