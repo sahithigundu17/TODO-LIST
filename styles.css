@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6E763F;
+}
+
+/*------ HOME PAGE ------*/
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainDiv h1 {
+    font-family: 'Modak';
+    font-weight: 400;
+    font-size: 48px;
+    color: #FEF6F0;
+}
+
+.center-image {
+    width: 372px;
+    height: 357px;
+    border: 4px solid #151E08;
+    border-radius: 25px;
+    background-color: #97A085;
+    margin-bottom: 24px;
+    box-shadow: 2px 2px 4px rgba(21, 30, 8, 0.6);
+}
+
+.center-image img {
+    margin-top: 10px;
+    width: 343px;
+    height: 343px;
+}
+
+#start-btn {
+    font-family: 'Pixelify Sans';
+    font-size: 24px;
+    color: #FEF6F0;
+    background-color: #97A085;
+    border: 4px solid #151E08;
+    border-radius: 10px;
+    padding: 8px 24px;
+    box-shadow: 2px 2px 4px rgba(21, 30, 8, 0.6);
+}
+#start-btn:hover {
+    transform: scale(1.1) perspective(1px);
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+/*------ DASHBOARD ------*/
+
+.dashDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.top-section {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.datetime {
+    width: 30%;
+    height: 100%;
+    background-color: #FEF6F0;
+    border: 4px solid #CAC7B1;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px rgba(21, 30, 8, 0.6);
+}
+
+.right-section {
+    width: 66%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.progression {
+    height: 60%;
+    background-color: #FEF6F0;
+    border: 4px solid #CAC7B1;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px rgba(21, 30, 8, 0.6);
+}
+
+.bottom-section {
+    width: 100%;
+    height: 50%;
+    background-color: #FEF6F0;
+    border: 4px solid #CAC7B1;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px rgba(21, 30, 8, 0.6);
+    margin-bottom: 24px;
+}
+
+#finish-btn {
+    font-family: 'Pixelify Sans';
+    font-size: 24px;
+    color: #FEF6F0;
+    background-color: #97A085;
+    border: 4px solid #151E08;
+    border-radius: 10px;
+    padding: 8px 24px;
+    box-shadow: 2px 2px 4px rgba(21, 30, 8, 0.6);
+}
+#finish-btn:hover {
+    transform: scale(1.1) perspective(1px);
+    transition: 0.3 ease;
+    cursor: pointer;
+}
