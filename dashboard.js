@@ -22,6 +22,12 @@ const taskSpans = [];
 const progressBarValue = document.getElementById("progress-bar")
 let totalTasks = 0;
 
+const finishBtn = document.getElementById("finish-btn");
+finishBtn.addEventListener("click", () => {
+    localStorage.setItem("finalProgress", progressBarValue.value);
+    window.electronAPI.loadPage("finishDay.html");
+})
+
 for (let i = 1; i <= 7; i++) {
     let taskSpan = document.getElementById("text-task-" + i);
 
@@ -62,12 +68,9 @@ function updateTaskDisplay() {
 
 function updateProgressBar() {
     const checkedElements = document.querySelectorAll(".checked");
-    const checkedCount = checkedElements.length;  // Count of tasks marked as checked
-    const totalTasks = taskList.length;  // Total tasks in the list
-
-    // Calculate progress as the ratio of checked tasks to total tasks
+    const checkedCount = checkedElements.length;
+    const totalTasks = taskList.length;
     const progress = checkedCount / totalTasks;
 
-    // Update the progress bar value
     progressBarValue.value = progress * 100;
 }
