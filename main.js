@@ -1,5 +1,11 @@
 const path = require("path");
-const { app, BrowserWindow, ipcMain, desktopCapturer, dialog } = require("electron");
+const {
+  app,
+  BrowserWindow,
+  ipcMain,
+  desktopCapturer,
+  dialog,
+} = require("electron");
 const fs = require("fs");
 
 let win;
@@ -17,8 +23,8 @@ function createWindow() {
 
   win.removeMenu();
   win.loadFile("index.html");
-  win.webContents.openDevTools();
-  
+  //win.webContents.openDevTools();
+
   ipcMain.on("load-page", (event, page) => {
     win.loadFile(page);
   });
