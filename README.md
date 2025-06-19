@@ -15,7 +15,7 @@ understanding of fundamentals methods and data structures.
 
 ### Installation
 1. Clone the repository
-```git clone https://github.com/Btelgeuse/GreenProductive.git```
+```git clone https://github.com/sahithigundu17/TODO-LIST.git```
 2. Install NPM packages
 ```npm install```
 3. Install ElectronJS
@@ -40,18 +40,3 @@ Once you're done, click on the finish button to get your daily achievement score
 3. Commit your changes (```git commit -m "..."```)
 4. Push to the branch (```git push origin ...```)
 5. Open a pull request
-
-### Main contributors
-Nobody contributed yet ;(
-
-## Contact
-Joanne Andriamahandry
-
-[My Instagram](https://www.instagram.com/b.telgeuse/)
-
-## Acknowledgements
-Here are the resources that helped me build this project:
-*
-*
-*
-*
